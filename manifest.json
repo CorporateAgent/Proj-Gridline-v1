@@ -1,0 +1,22 @@
+{
+  "name": "Gridline",
+  "id": "1406993529312239517",
+  "api": "1.0.0",
+  "main": "code.js",
+  "capabilities": [],
+  "enableProposedApi": false,
+  "documentAccess": "dynamic-page",
+  "editorType": [
+    "figma"
+  ],
+  "ui": "ui.html",
+  "networkAccess": {
+    "reasoning": "Access to localhost is needed for API requests during development.",
+    "allowedDomains": [
+      "https://thefoschini.myvtex.com/_v/segment/graphql/v1/",
+      "https://thefoschini.vtexassets.com",
+      "http://localhost:3000"
+    ]
+    
+  }
+}

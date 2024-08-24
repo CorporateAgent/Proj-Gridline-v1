@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      margin: 0;
+      background: black;
+      font-family: Poppins, Arial, sans-serif;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      justify-content: flex-start;
+      align-items: flex-start;
+      overflow: hidden; 
+    }
+    .container {
+      width: 100%;
+      padding: 12px;
+      background: black;
+      border-radius: 12px;
+      overflow: hidden;
+      border: 3px black solid;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    .image-preview-container {
+      width: 260px;
+      height: 125px;
+      position: relative;
+    }
+    .image-background {
+      width: 265px;
+      height: 125px;
+      position: absolute;
+      background: white;
+      border-radius: 12px;
+      border: 3px white solid;
+    }
+    .json-loaded {
+      position: absolute;
+      left: 15px;
+      top: 97px;
+      display: flex;
+      gap: 6px;
+      background: #505050;
+      padding: 3px 6px;
+      border-radius: 100px;
+      border: 1.5px solid; 
+      align-items: center;
+    }
+    .json-loaded-icon {
+      width: 10px;
+      height: 10px;
+      background: #8AFF61; 
+    }
+    .json-loaded-text {
+      color: #8AFF61; 
+      font-size: 10px;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+    .image-preview {
+      width: 67px;
+      height: 70px;
+      background: #D9D9D9;
+      display: inline-block;
+      margin-right: 10px;
+    }
+    .upload-container {
+      width: 248px;
+      background: white;
+      border-radius: 12px;
+      padding: 12px;
+      color: black;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+    .upload-title {
+      font-size: 12px;
+      font-weight: 500;
+    }
+    .divider {
+      width: 240px;
+      border: 0.75px rgba(0, 0, 0, 0.10) solid;
+    }
+    .selected-instances {
+      font-size: 10px;
+      font-weight: 400;
+      color: black;
+      word-wrap: break-word;
+      max-height: 30px; 
+      overflow-y: auto; 
+      padding-right: 5px; 
+    }
+    .generate-button {
+      width: 248px;
+      padding: 12px;
+      background: #6F49FF;
+      border-radius: 12px;
+      text-align: center;
+      cursor: pointer;
+      font-size: 12px;
+      font-weight: 700;
+    }
+    .generate-button:hover {
+      background-color: #4728de; 
+      transform: scale(1.05); 
+    }
+
+    .generate-button:active {
+      transform: scale(0.95); 
+      background-color: #4832b3; 
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Image Preview Section -->
+    <div class="image-preview-container">
+      <div class="image-background"></div>
+      <div id="json-loaded" class="json-loaded">
+        <div id="json-loaded-icon" class="json-loaded-icon"></div>
+        <div id="json-loaded-text" class="json-loaded-text">STATUS</div>
+      </div>
+      <div id="image-previews" style="position: absolute; left: 15px; top: 18px; display: flex; gap: 10px;">
+        <div id="image1" class="image-preview"></div>
+        <div id="image2" class="image-preview"></div>
+        <div id="image3" class="image-preview"></div>
+      </div>
+    </div>
+
+    <!-- SKU Input Section -->
+    <div class="upload-container">
+      <input type="text" id="sku-input" placeholder="Enter SKU number..." style="width: 100%; padding: 8px; font-size: 12px; border-radius: 8px; border: 1px solid #ccc;">
+      <div class="divider"></div>
+      <div id="selected-instances" class="selected-instances">
+        No template selected
+      </div>
+    </div>
+
+    <!-- Generate Button -->
+    <div id="generate" class="generate-button">Generate Design</div>
+  </div>
+
+  <script>
+let productData = null;
+
+// Function to update the status text, border, and icon color
+function updateStatusText(text) {
+  const statusText = document.getElementById('json-loaded-text');
+  const statusBorder = document.getElementById('json-loaded');
+  const statusIcon = document.getElementById('json-loaded-icon');
+
+  statusText.textContent = text;
+
+  // Define the color for each status
+  let color;
+  switch (text) {
+    case 'ONLINE':
+      color = '#00C667'; // Bash purple
+      break;
+    case 'READING':
+      color = '#FFD700'; // Gold
+      break;
+    case 'LOADING PRODUCT DATA':
+      color = '#66A4B8'; // Dodger Blue
+      break;
+    case 'PRODUCT LOADED':
+      color = '#8AFF61'; // Green
+      break;
+  }
+
+  // Apply the color to the border, icon, and text
+  statusBorder.style.borderColor = color;
+  statusIcon.style.backgroundColor = color;
+  statusText.style.color = color;
+}
+
+// Function to handle fetching product data when SKU is entered
+async function fetchProductData(sku) {
+  updateStatusText('LOADING PRODUCT DATA');
+  try {
+    const response = await fetch('http://localhost:3000/sku', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({ sku }),
+    });
+
+    const result = await response.json();
+
+    if (result.message !== 'Data saved successfully') {
+      alert('Failed to fetch or save product data.');
+      return;
+    }
+
+    const jsonResponse = await fetch('http://localhost:3000/temp/productData.json');
+    productData = await jsonResponse.json();
+
+    updateStatusText('PRODUCT LOADED');
+    displayImagePreviews(productData);
+  } catch (error) {
+    console.error('Error:', error);
+    alert('Failed to process SKU. Please try again.');
+  }
+}
+
+// Event listener for SKU input
+document.getElementById('sku-input').addEventListener('input', () => {
+  const sku = document.getElementById('sku-input').value.trim();
+  updateStatusText(sku ? 'READING' : 'ONLINE');
+  if (sku.length === 6 || sku.length === 7) {
+    fetchProductData(sku);
+  }
+});
+
+// Event listener for the Generate button
+document.getElementById('generate').onclick = () => {
+  if (!productData) {
+    alert('Please enter a valid SKU number and wait for it to load.');
+    return;
+  }
+  parent.postMessage({ pluginMessage: { type: 'generateInstances', productData } }, '*');
+};
+
+// Function to display image previews
+function displayImagePreviews(productData) {
+  const images = productData.data.productsByIdentifier[0].items[0].images.slice(0, 3);
+  images.forEach((image, index) => {
+    const imgDiv = document.getElementById(`image${index + 1}`);
+    imgDiv.style.backgroundImage = `url(${image.imageUrl})`;
+    imgDiv.style.backgroundSize = 'cover';
+    imgDiv.style.backgroundPosition = 'center';
+  });
+}
+
+// Handle messages from Figma
+window.onmessage = (event) => {
+  const message = event.data.pluginMessage;
+  if (message.type === 'updateSelection') {
+    updateSelectedInstances(message.selectedInstanceNames);
+  }
+};
+
+// Function to update the list of selected instances
+function updateSelectedInstances(instanceNames) {
+  const selectedInstancesDiv = document.getElementById('selected-instances');
+  selectedInstancesDiv.textContent = instanceNames.length ? instanceNames.join(', ') : 'No templates selected';
+}
+
+// Initialize the status text to "PENDING" on page load
+updateStatusText('ONLINE');
+  </script>
+</body>
+</html>

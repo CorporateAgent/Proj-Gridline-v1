@@ -1,0 +1,54 @@
+{
+  "data": {
+    "productsByIdentifier": [
+      {
+        "productName": "Women's Nike AL8 White/Metallic Silver/Black Sail Sneakers",
+        "brand": "Nike",
+        "priceRange": {
+          "sellingPrice": {
+            "lowPrice": 1799.95
+          }
+        },
+        "description": "The AL8 is the perfect mix of nostalgia (peep the embroidered Swoosh) and the modern comfort you love. The plush upper combines breathable mesh and a chunky silhouette for a sporty look that's easy to style. Plus, a flexible Waffle sole references retro running shoes while providing the traction you need to go all day. Inspired by the '90s. Ready for the future.",
+        "items": [
+          {
+            "images": [
+              {
+                "imageUrl": "https://thefoschini.vtexassets.com/arquivos/ids/159303516/62d00bce-40cb-4994-9202-ab3f30d11045.jpg?v=638600220453000000"
+              },
+              {
+                "imageUrl": "https://thefoschini.vtexassets.com/arquivos/ids/159303521/e11a781c-249b-41d5-b91e-cca99441503a.jpg?v=638600220457530000"
+              },
+              {
+                "imageUrl": "https://thefoschini.vtexassets.com/arquivos/ids/159303527/c5a0fd57-7452-4266-9d34-a91df513ea88.jpg?v=638600220461770000"
+              },
+              {
+                "imageUrl": "https://thefoschini.vtexassets.com/arquivos/ids/159303533/5abd038c-5401-4743-884f-f64574fa1d55.jpg?v=638600220467070000"
+              },
+              {
+                "imageUrl": "https://thefoschini.vtexassets.com/arquivos/ids/159303540/f87f3bf2-2296-4398-9142-5b98081d763d.jpg?v=638600220472100000"
+              },
+              {
+                "imageUrl": "https://thefoschini.vtexassets.com/arquivos/ids/159303542/78a21b7b-9a4b-40ff-b939-fbaac350deda.jpg?v=638600220476300000"
+              },
+              {
+                "imageUrl": "https://thefoschini.vtexassets.com/arquivos/ids/159303548/3b873c6b-790e-4105-8e61-6eeaccc54d59.jpg?v=638600220480070000"
+              }
+            ]
+          }
+        ],
+        "categoryTree": [
+          {
+            "href": "/women"
+          },
+          {
+            "href": "/women/shoes"
+          },
+          {
+            "href": "/women/shoes/sneakers"
+          }
+        ]
+      }
+    ]
+  }
+}
