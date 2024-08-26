@@ -1,6 +1,6 @@
 # Gridline System v0.2
 
-An attempt at streamlining the integration of product data into Figma by generating instances based on product information & existing components in team library. Allowing designers to dynamically generate designs that reflect Bash product data directly within any organization Figma page/board.The plugin automates the creation of design instances within Figma by cloning design components. <br><br>![AltText](/images/preview_small.gif) <br>
+An attempt at streamlining the integration of product data into Figma designs, the plugin enables designers to generate design instances using predefined components from the team library. It automatically populates these instances with Bash product data on any Figma page or board. By cloning existing design components, the plugin simplifies the application of product details in design prototypes, ensuring designers have access to the most up-to-date and relevant product information in their designs. <br><br>![AltText](/images/preview_small.gif) <br>
 
 
 ## Key Features
