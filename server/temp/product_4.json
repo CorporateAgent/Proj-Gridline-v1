@@ -1,29 +1,26 @@
 {
-  "productName": "Nike Kids White Just Do It Short Sleeve Tee - Cotton",
-  "brand": "Nike",
+  "productName": "Younger Boy's Charcoal Borg Bomber Jacket",
+  "brand": "Exact",
   "priceRange": {
     "sellingPrice": {
-      "lowPrice": 429.95
+      "lowPrice": 139.99
     }
   },
-  "description": "The Nike Kids White Just Do It Short Sleeve Tee is made of soft cotton for all-day comfort. With a classic design featuring the iconic \"Just Do It\" slogan, this tee is perfect for active kids. It's easy to care for. Perfect for everyday wear.",
+  "description": "The perfect layering piece in his wardrobe this season. Pair this fluffy warm jacket with his fave jeans and a sweater for a stylish outfit.\n\nBorg fluffy fabric,\nFront zip up,\nFront pockets.",
   "items": [
     {
       "images": [
         {
-          "imageUrl": "https://thefoschini.vtexassets.com/arquivos/ids/159235771/c088d9b7-5c1f-4ace-94d5-a9b27bd4bf69.jpg?v=638599224471130000"
+          "imageUrl": "https://thefoschini.vtexassets.com/arquivos/ids/154104251/8dd0063b-3649-4cee-b260-c5e910c08bc9.jpg?v=638539066392730000"
         },
         {
-          "imageUrl": "https://thefoschini.vtexassets.com/arquivos/ids/159235774/41b6951d-c988-4188-b37e-9e9f052dc638.jpg?v=638599224478070000"
+          "imageUrl": "https://thefoschini.vtexassets.com/arquivos/ids/154104259/1665feca-3d96-49b8-b94f-4b08f66180d0.jpg?v=638539066400400000"
         },
         {
-          "imageUrl": "https://thefoschini.vtexassets.com/arquivos/ids/159235778/1c75e488-85fb-40db-b89a-b12675c8a934.jpg?v=638599224485270000"
+          "imageUrl": "https://thefoschini.vtexassets.com/arquivos/ids/154104269/aec3c43f-baea-4a2c-b0cc-2f77466c58bc.jpg?v=638539066407530000"
         },
         {
-          "imageUrl": "https://thefoschini.vtexassets.com/arquivos/ids/159235782/854058c1-d2b3-400d-a2d0-3425a3e58080.jpg?v=638599224492000000"
-        },
-        {
-          "imageUrl": "https://thefoschini.vtexassets.com/arquivos/ids/159235787/69ac6468-d3d2-4792-b452-efb6b5410d57.jpg?v=638599224498630000"
+          "imageUrl": "https://thefoschini.vtexassets.com/arquivos/ids/154104274/5a291cd0-b6c1-44af-8473-96a3e7f4a4c1.jpg?v=638539066413900000"
         }
       ]
     }
@@ -39,7 +36,7 @@
       "href": "/kids/boys/clothing"
     },
     {
-      "href": "/kids/boys/clothing/tops"
+      "href": "/kids/boys/clothing/jackets---coats"
     }
   ]
 }

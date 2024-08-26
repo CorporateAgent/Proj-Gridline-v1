@@ -1,42 +1,48 @@
 {
-  "productName": "Nike Women's Phoenix Waffle White/Green/Grey Sneaker",
-  "brand": "Nike",
+  "productName": "Men's Fatigue Utility Vest",
+  "brand": "THE FIX",
   "priceRange": {
     "sellingPrice": {
-      "lowPrice": 1999.95
+      "lowPrice": 159.99
     }
   },
-  "description": "All-day comfort meets all-day style. Taking cues from original Blue Ribbon Sports designs and incorporating the technological advances of today, the Phoenix Waffle rises from the ashes. A redesigned Waffle tread lightens the shoe, while the increased midsole height creates an even softer ride. Check the vintage Swoosh logo and archive-inspired tongue for a modern take on classic BRS looks.(Supplier Style:FD2196-103/1)",
+  "description": "Complete yo' look with this must have utility vest. Featuring a sleeveless and button up design. Pair with your fave bottoms and sneakers for a dope look.",
   "items": [
     {
       "images": [
         {
-          "imageUrl": "https://thefoschini.vtexassets.com/arquivos/ids/158786560/00bf9267-aa6b-49e1-ba82-d1120fb93b2e.jpg?v=638593214228930000"
+          "imageUrl": "https://thefoschini.vtexassets.com/arquivos/ids/158817686/60362635.jpg?v=638593263448670000"
         },
         {
-          "imageUrl": "https://thefoschini.vtexassets.com/arquivos/ids/158786565/147f69bd-f98f-4033-9cb4-325ba6e54dd6.jpg?v=638593214232870000"
+          "imageUrl": "https://thefoschini.vtexassets.com/arquivos/ids/158817693/60362635_01.jpg?v=638593263455700000"
         },
         {
-          "imageUrl": "https://thefoschini.vtexassets.com/arquivos/ids/158786568/c8e0fcae-cd67-42fb-b5e4-8a9dbefe7604.jpg?v=638593214236630000"
+          "imageUrl": "https://thefoschini.vtexassets.com/arquivos/ids/158817706/60362635_02.jpg?v=638593263464930000"
         },
         {
-          "imageUrl": "https://thefoschini.vtexassets.com/arquivos/ids/158786570/a0c91d11-3b0e-4615-a3c8-e4b427540e03.jpg?v=638593214240530000"
+          "imageUrl": "https://thefoschini.vtexassets.com/arquivos/ids/158817720/60362635_03.jpg?v=638593263478570000"
         },
         {
-          "imageUrl": "https://thefoschini.vtexassets.com/arquivos/ids/158786572/d7d13589-22d0-4718-99a9-4db33d896439.jpg?v=638593214244170000"
+          "imageUrl": "https://thefoschini.vtexassets.com/arquivos/ids/158817729/60362635_04.jpg?v=638593263485470000"
+        },
+        {
+          "imageUrl": "https://thefoschini.vtexassets.com/arquivos/ids/158817738/60362635_05.jpg?v=638593263491570000"
+        },
+        {
+          "imageUrl": "https://thefoschini.vtexassets.com/arquivos/ids/158817747/60362635_SW.jpg?v=638593263498600000"
         }
       ]
     }
   ],
   "categoryTree": [
     {
-      "href": "/women"
+      "href": "/men"
     },
     {
-      "href": "/women/shoes"
+      "href": "/men/clothing"
     },
     {
-      "href": "/women/shoes/sneakers"
+      "href": "/men/clothing/jackets---coats"
     }
   ]
 }

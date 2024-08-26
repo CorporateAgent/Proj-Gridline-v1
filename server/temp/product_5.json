@@ -1,51 +1,42 @@
 {
-  "productName": "Nike Women's NSW Essential Mid-Rise Woven Cargo Midi Flax Skirt",
-  "brand": "Nike",
+  "productName": "Jet Kids Navy Fleece School Jacket",
+  "brand": "Jet",
   "priceRange": {
     "sellingPrice": {
-      "lowPrice": 1699.95
+      "lowPrice": 149.99
     }
   },
-  "description": "Midi or mini? A zip above the pockets on this loose-fitting Ripstop skirt makes choosing easier. A bungee at the bottom hem gives you even more styling options. Supplier style is (FV7503-224/1).",
+  "description": "Keep your child warm with the Jet Kids Navy Fleece School Jacket. Made from cozy fleece material, this jacket is perfect for chilly days. With a stylish design and durable construction, it's ideal for everyday wear.",
   "items": [
     {
       "images": [
         {
-          "imageUrl": "https://thefoschini.vtexassets.com/arquivos/ids/159197625/b990052d-3274-447b-b86a-08fe2a6989c3.jpg?v=638598428573770000"
+          "imageUrl": "https://thefoschini.vtexassets.com/arquivos/ids/157664997/009ed243-54b6-4424-bf39-2c480de3c482.jpg?v=638579429808330000"
         },
         {
-          "imageUrl": "https://thefoschini.vtexassets.com/arquivos/ids/159197628/bcb5b959-9c6b-4be7-9ca3-44a0c245a3b6.jpg?v=638598428577830000"
+          "imageUrl": "https://thefoschini.vtexassets.com/arquivos/ids/157665004/e5ee047e-3f64-4bf0-8ff8-40bc280551c6.jpg?v=638579429812900000"
         },
         {
-          "imageUrl": "https://thefoschini.vtexassets.com/arquivos/ids/159197630/5ffaa536-31cd-473d-b318-b1a6d8cb99d0.jpg?v=638598428583070000"
+          "imageUrl": "https://thefoschini.vtexassets.com/arquivos/ids/157665011/44ae607e-b009-4ad9-931b-9fddbd0a49bc.jpg?v=638579429818370000"
         },
         {
-          "imageUrl": "https://thefoschini.vtexassets.com/arquivos/ids/159197633/bc069ebe-6590-4775-8909-0e9f631ad938.jpg?v=638598428586900000"
-        },
-        {
-          "imageUrl": "https://thefoschini.vtexassets.com/arquivos/ids/159197636/6f09da04-7001-43a0-a154-b917c9070413.jpg?v=638598428591430000"
-        },
-        {
-          "imageUrl": "https://thefoschini.vtexassets.com/arquivos/ids/159197640/3d2ef532-bc49-41c3-9d7c-016d1fc54c27.jpg?v=638598428595970000"
-        },
-        {
-          "imageUrl": "https://thefoschini.vtexassets.com/arquivos/ids/159197644/0365ff98-060b-4a4a-82fb-a2dbfe3e462c.jpg?v=638598428600200000"
-        },
-        {
-          "imageUrl": "https://thefoschini.vtexassets.com/arquivos/ids/159197647/c9e85811-6dec-4781-98c3-25857743ed4d.jpg?v=638598428604100000"
+          "imageUrl": "https://thefoschini.vtexassets.com/arquivos/ids/157665016/25b82155-490a-41fc-85cf-1061a95155bc.jpg?v=638579429821970000"
         }
       ]
     }
   ],
   "categoryTree": [
     {
-      "href": "/women"
+      "href": "/kids"
     },
     {
-      "href": "/women/clothing"
+      "href": "/kids/boys"
     },
     {
-      "href": "/women/clothing/skirts"
+      "href": "/kids/boys/clothing"
+    },
+    {
+      "href": "/kids/boys/clothing/jackets---coats"
     }
   ]
 }
