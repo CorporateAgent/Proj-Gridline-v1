@@ -1,0 +1,54 @@
+{
+  "productName": "Nike Junior Dunk Low White/Cream Sneaker",
+  "brand": "Nike",
+  "priceRange": {
+    "sellingPrice": {
+      "lowPrice": 1899.95
+    }
+  },
+  "description": "Meet the Nike Junior Dunk Low White/Cream Sneaker, crafted with premium leather for a timeless style. These kicks feature a fabric lining for comfort and durability, making them the perfect choice for everyday wear. With a classic design and high-quality materials, these sneakers are a must-have addition to any sneaker collection. Supplier style (FB9109-109)",
+  "items": [
+    {
+      "images": [
+        {
+          "imageUrl": "https://thefoschini.vtexassets.com/arquivos/ids/159317279/6212fc8d-a569-4e17-b316-301ddf690bab.jpg?v=638600889544430000"
+        },
+        {
+          "imageUrl": "https://thefoschini.vtexassets.com/arquivos/ids/159317284/78864187-f5ed-48f0-87bb-0bc319d67cf1.jpg?v=638600889550300000"
+        },
+        {
+          "imageUrl": "https://thefoschini.vtexassets.com/arquivos/ids/159317289/e24b42ba-8c54-4d2c-9b87-6644e33a325a.jpg?v=638600889556230000"
+        },
+        {
+          "imageUrl": "https://thefoschini.vtexassets.com/arquivos/ids/159317293/c9f81e97-1c1f-4313-bc95-2d7680147540.jpg?v=638600889562630000"
+        },
+        {
+          "imageUrl": "https://thefoschini.vtexassets.com/arquivos/ids/159317302/3bf254dc-33dc-4a40-b543-52c642559f09.jpg?v=638600889569970000"
+        },
+        {
+          "imageUrl": "https://thefoschini.vtexassets.com/arquivos/ids/159317310/1954bfca-b067-445a-89e1-3d41185e23eb.jpg?v=638600889576830000"
+        },
+        {
+          "imageUrl": "https://thefoschini.vtexassets.com/arquivos/ids/159317315/5bc38feb-b75c-4ce1-9a50-3d468f2f93d5.jpg?v=638600889584300000"
+        },
+        {
+          "imageUrl": "https://thefoschini.vtexassets.com/arquivos/ids/159317322/1e21aafb-a77b-482d-8efc-bf8d684ae657.jpg?v=638600889591030000"
+        }
+      ]
+    }
+  ],
+  "categoryTree": [
+    {
+      "href": "/kids"
+    },
+    {
+      "href": "/kids/boys"
+    },
+    {
+      "href": "/kids/boys/shoes"
+    },
+    {
+      "href": "/kids/boys/shoes/sneakers"
+    }
+  ]
+}

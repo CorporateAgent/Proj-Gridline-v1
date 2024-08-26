@@ -1,259 +1,436 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <style>
-    body {
-      margin: 0;
-      background: black;
-      font-family: Poppins, Arial, sans-serif;
-      color: white;
-      display: flex;
-      flex-direction: column;
-      gap: 12px;
-      justify-content: flex-start;
-      align-items: flex-start;
-      overflow: hidden; 
+<meta charset="UTF-8">
+<title>Gridline</title>
+<style>
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #000;
+}
+
+
+#container {
+  width: 300px;
+  background-color: #000000;
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#product_preview {
+  position: relative;
+  width: 100%;
+  background-color: #EEEEEE;
+  border-radius: 6px 6px 0px 0px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ #product-info img {
+  max-width: 100%;
+  height: 140px; /* Ensuring the height is also set */
+}
+
+#prev-product, #next-product {
+  background-color: #000000;
+  color: #FFF;
+  border: none;
+  border-radius: 15%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: absolute;
+  top: 80%;
+  transform: translateY(-50%);
+}
+
+#prev-product {
+  left: 20px;
+}
+#prev-product:hover {
+      background-color: #7c7c7c; 
+      width: 45px;
+      height: 45px;
     }
-    .container {
-      width: 100%;
-      padding: 12px;
-      background: black;
-      border-radius: 12px;
-      overflow: hidden;
-      border: 3px black solid;
-      display: flex;
-      flex-direction: column;
-      gap: 12px;
+    #prev-product:active {
+      width: 35px;
+      height: 35px;
+      background-color: #4832b3; 
     }
-    .image-preview-container {
-      width: 260px;
-      height: 125px;
-      position: relative;
+
+#next-product {
+  right: 20px;
+}
+#next-product:hover {
+      background-color: #7c7c7c; 
+      width: 45px;
+      height: 45px;
     }
-    .image-background {
-      width: 265px;
-      height: 125px;
-      position: absolute;
-      background: white;
-      border-radius: 12px;
-      border: 3px white solid;
+    #next-product:active {
+      width: 35px;
+      height: 35px;
+      background-color: #4832b3; 
     }
-    .json-loaded {
-      position: absolute;
-      left: 15px;
-      top: 97px;
-      display: flex;
-      gap: 6px;
-      background: #505050;
-      padding: 3px 6px;
-      border-radius: 100px;
-      border: 1.5px solid; 
-      align-items: center;
-    }
-    .json-loaded-icon {
-      width: 10px;
-      height: 10px;
-      background: #8AFF61; 
-    }
-    .json-loaded-text {
-      color: #8AFF61; 
-      font-size: 10px;
-      font-weight: 700;
-      text-transform: uppercase;
-    }
-    .image-preview {
-      width: 67px;
-      height: 70px;
-      background: #D9D9D9;
-      display: inline-block;
-      margin-right: 10px;
-    }
-    .upload-container {
-      width: 248px;
-      background: white;
-      border-radius: 12px;
-      padding: 12px;
-      color: black;
-      display: flex;
-      flex-direction: column;
-      gap: 6px;
-    }
-    .upload-title {
-      font-size: 12px;
-      font-weight: 500;
-    }
-    .divider {
-      width: 240px;
-      border: 0.75px rgba(0, 0, 0, 0.10) solid;
-    }
-    .selected-instances {
-      font-size: 10px;
-      font-weight: 400;
-      color: black;
-      word-wrap: break-word;
-      max-height: 30px; 
-      overflow-y: auto; 
-      padding-right: 5px; 
-    }
-    .generate-button {
-      width: 248px;
-      padding: 12px;
-      background: #6F49FF;
-      border-radius: 12px;
-      text-align: center;
-      cursor: pointer;
-      font-size: 12px;
-      font-weight: 700;
-    }
-    .generate-button:hover {
+
+#status-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+#json-loaded-text {
+  background-color: #8AFF61; /* Default background color */
+  padding: 2px;
+  border-radius: 0px 0px 2px 2px;
+  flex: 1;
+  font-size: 0px; /* Adjusted from 0px for visibility */
+  text-align: left;
+  width: 20%; /* Start with a default width */
+  transition: background-color 0.3s ease, width 0.5s ease; /* Smooth transitions for color and width */
+}
+
+#current-product {
+  font-size: 14px;
+  color: #FFF;
+  margin-left: 10px;
+}
+
+#search-container {
+  display: flex;
+
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 10px;
+}
+
+#generate-design {
+  background-color: #4646E8;
+  color: #FFF;
+  padding: 15px;
+  font-size: 14px;
+  border-radius: 3px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+#icon_generate {
+  margin-left: 4px;
+  font-size: 10px;
+  display: inline-flex; /* Aligns the icon and text nicely */
+  align-items: center; /* Centers the items vertically */
+  gap: 9px; /* Optional: Adds space between the icon and text */
+}
+
+#generate-design:hover {
       background-color: #4728de; 
       transform: scale(1.05); 
     }
-
-    .generate-button:active {
+#generate-design:active {
       transform: scale(0.95); 
       background-color: #4832b3; 
     }
-  </style>
-</head>
-<body>
-  <div class="container">
-    <!-- Image Preview Section -->
-    <div class="image-preview-container">
-      <div class="image-background"></div>
-      <div id="json-loaded" class="json-loaded">
-        <div id="json-loaded-icon" class="json-loaded-icon"></div>
-        <div id="json-loaded-text" class="json-loaded-text">STATUS</div>
-      </div>
-      <div id="image-previews" style="position: absolute; left: 15px; top: 18px; display: flex; gap: 10px;">
-        <div id="image1" class="image-preview"></div>
-        <div id="image2" class="image-preview"></div>
-        <div id="image3" class="image-preview"></div>
-      </div>
-    </div>
 
-    <!-- SKU Input Section -->
-    <div class="upload-container">
-      <input type="text" id="sku-input" placeholder="Enter SKU number..." style="width: 100%; padding: 8px; font-size: 12px; border-radius: 8px; border: 1px solid #ccc;">
-      <div class="divider"></div>
-      <div id="selected-instances" class="selected-instances">
-        No template selected
-      </div>
-    </div>
-
-    <!-- Generate Button -->
-    <div id="generate" class="generate-button">Generate Design</div>
-  </div>
-
-  <script>
-let productData = null;
-
-// Function to update the status text, border, and icon color
-function updateStatusText(text) {
-  const statusText = document.getElementById('json-loaded-text');
-  const statusBorder = document.getElementById('json-loaded');
-  const statusIcon = document.getElementById('json-loaded-icon');
-
-  statusText.textContent = text;
-
-  // Define the color for each status
-  let color;
-  switch (text) {
-    case 'ONLINE':
-      color = '#00C667'; // Bash purple
-      break;
-    case 'READING':
-      color = '#FFD700'; // Gold
-      break;
-    case 'LOADING PRODUCT DATA':
-      color = '#66A4B8'; // Dodger Blue
-      break;
-    case 'PRODUCT LOADED':
-      color = '#8AFF61'; // Green
-      break;
-  }
-
-  // Apply the color to the border, icon, and text
-  statusBorder.style.borderColor = color;
-  statusIcon.style.backgroundColor = color;
-  statusText.style.color = color;
+.button-container {
+  display:inline-flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 10px;
+}
+#selected-instances {
+  width: 94%; /* Match the container width */
+  padding: 10px 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: #F1F1F2; /* Dark background for contrast */
+  color: rgb(114, 114, 114); /* Text color */
+  border-radius: 3px;
+  font-size: 10px; /* Readable text size */
+  overflow-y: scroll; /* Scrollable if content overflows */
+  height: 50px; /* Fixed height */
 }
 
-// Function to handle fetching product data when SKU is entered
-async function fetchProductData(sku) {
-  updateStatusText('LOADING PRODUCT DATA');
-  try {
-    const response = await fetch('http://localhost:3000/sku', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({ sku }),
-    });
+#current-product {
+  color: #FFF;
+  font-size: 0px;
+  margin-top: 0px;
+}
 
-    const result = await response.json();
-
-    if (result.message !== 'Data saved successfully') {
-      alert('Failed to fetch or save product data.');
-      return;
+#order-options {
+  border-radius: 3px;
+  background-color: #7474EE;
+  color: #FFF;
+  text-align: center;
+  padding: 10px;
+  margin-left: 8px;
+  font-size: 12px;
+  border: none;
+  width: 150%;
+}
+#order-options:hover {
+      background-color: #b4b4b4; 
+      color: #ffffff;
+      font-size: 13px;
     }
 
-    const jsonResponse = await fetch('http://localhost:3000/temp/productData.json');
-    productData = await jsonResponse.json();
 
-    updateStatusText('PRODUCT LOADED');
-    displayImagePreviews(productData);
-  } catch (error) {
-    console.error('Error:', error);
-    alert('Failed to process SKU. Please try again.');
-  }
+#price-range-input {
+  border-radius: 3px;
+  padding-left: 10px;
+  text-align: center;
+  background-color: #7474EE;
+  color: #FFF;
+  padding: 10px;
+  font-size: 12px;
+  border: none;
+  width: 70%;
 }
 
-// Event listener for SKU input
-document.getElementById('sku-input').addEventListener('input', () => {
-  const sku = document.getElementById('sku-input').value.trim();
-  updateStatusText(sku ? 'READING' : 'ONLINE');
-  if (sku.length === 6 || sku.length === 7) {
-    fetchProductData(sku);
-  }
+#price-range-input:hover {
+      background-color: #b4b4b4; 
+      color: #000000;
+      font-size: 13px;
+    }
+
+#price-range-input::placeholder {
+  color: #ffffff; /* Example color */
+}
+
+#search-input {
+  border-radius: 3px;
+  background-color: #E3E3E4;
+  color: #3a3a3a;
+  padding: 10px;
+  margin-right: 8px;
+  font-size: 12px;
+  border: none;
+  width: 150%;
+}
+
+input::placeholder {
+  color: #afafaf; /* Change to whatever color you need */
+  opacity: 1; /* Optional: Full opacity */
+}
+
+#fetch {
+  border-radius: 3px;
+  background-color: #D1D1F9;
+  color: #000000;
+  padding: 10px;
+  font-size: 12px;
+  border: none;
+  width: 60%;
+}
+#fetch:hover {
+      background-color: #4728de;
+      transform: scale(1.10); 
+      color: #fff;
+    }
+#fetch:active {
+      transform: scale(0.95); 
+      background-color: #4728de; 
+    }
+
+</style>
+</head>
+<body>
+<div id="container">
+  <div id="product_preview">
+    <div id="product-info" > <img src="/images/employee-customer.jpg"></div>
+    <button id="prev-product">❮</button>
+    <button id="next-product">❯</button>
+  </div>
+  <div id="status-container">
+    <p id="json-loaded-text">Status: Ready</p>
+  </div>
+  
+  <span id="current-product">0/0</span>
+  <div id="search-container">
+    <input type="text" id="search-input" placeholder="Find products, stores, brands...">
+    <button id="fetch">Fetch</button>
+  </div>
+  <div class="button-container">
+    <input type="text" id="price-range-input" placeholder="Price">
+    <select id="order-options">
+      <option value="OrderByTopSaleDESC">Most Popular</option>
+      <option value="OrderByScoreDESC">Best Sellers</option>
+      <option value="OrderByReleaseDateDESC">New In</option>
+      <option value="OrderByPriceASC">Price Low to High</option>
+      <option value="OrderByPriceDESC">Price High to Low</option>
+    </select>
+  </div>
+  
+  <div id="selected-instances">Selected Instances: None</div>
+  <button id="generate-design"> Generate Design <span id="icon_generate"> &#9654</span> </button>
+</div>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    let currentIndex = 0; // Initialize currentIndex to 0
+    let totalProducts = 0;
+    let productData = null;
+
+    function updateStatusText(text) {
+        const statusText = document.getElementById('json-loaded-text');
+        statusText.textContent = `Status: ${text}`;
+    }
+
+    function updateCurrentProductDisplay() {
+        const currentProduct = document.getElementById('current-product');
+        currentProduct.textContent = `${currentIndex + 1}/${totalProducts}`;
+    }
+
+    function updateStatusText(status) {
+    const statusText = document.getElementById('json-loaded-text');
+    statusText.textContent = `Status: ${status}`;
+
+    // Adjust background color and width based on status
+    let color, width;
+    switch (status) {
+        case 'LOADING DATA':
+            color = '#FFD700'; // Gold for loading
+            width = '50%'; // Halfway loading
+            break;
+        case 'PRODUCT LOADED':
+            color = '#4CAF50'; // Green when loaded
+            width = '100%'; // Full bar when loaded
+            break;
+        case 'ERROR':
+            color = '#f44336'; // Red on error
+            width = '100%'; // Full bar to indicate complete stop
+            break;
+        default:
+            color = '#8AFF61'; // Light green by default
+            width = '20%'; // Default small amount
+            break;
+    }
+
+    // Apply the color and width to the status bar
+    statusText.style.backgroundColor = color;
+    statusText.style.width = width;
+}
+
+    function displayProductInfo(data) {
+        const info = document.getElementById('product-info');
+        info.innerHTML = ''; // Clear existing content
+        if (data.items && data.items.length > 0 && data.items[0].images && data.items[0].images.length > 0) {
+            const imageUrl = data.items[0].images[0].imageUrl;
+            const imageElem = document.createElement('img');
+            imageElem.src = imageUrl;
+            imageElem.alt = "Product Image";
+            info.appendChild(imageElem);
+        } else {
+            info.textContent = 'No image available';
+        }
+    }
+
+    async function fetchProductData() {
+        const searchText = document.getElementById('search-input').value;
+        const orderBy = document.getElementById('order-options').value;
+        const priceRange = document.getElementById('price-range-input').value;
+
+        updateStatusText('LOADING DATA');
+        try {
+            const response = await fetch('http://localhost:3000/search', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ searchText, orderBy, priceRange })
+            });
+
+            const results = await response.json();
+            if (!results || results.message !== 'Data saved successfully') {
+                updateStatusText('ERROR');
+                alert('Failed to fetch data.');
+                return;
+            }
+
+            totalProducts = Math.min(results.count, 10); // Handle up to 10 products
+            currentIndex = 0; // Reset currentIndex to 0 after a new search
+            updateCurrentProductDisplay();
+            loadProductData(currentIndex);
+        } catch (error) {
+            updateStatusText('ERROR');
+            console.error('Error:', error);
+            alert('Failed to process search. Please try again.');
+        }
+    }
+
+    async function loadProductData(index) {
+        if (index < 0 || index >= totalProducts) {
+            currentIndex = 0; // Reset to the first product if out of bounds
+        } else if (index >= totalProducts) {
+            currentIndex = 0; // Reset to the first product if the end is reached
+        } else {
+            currentIndex = index;
+        }
+
+        const fileName = `product_${currentIndex + 1}.json`;
+        try {
+            const response = await fetch(`http://localhost:3000/temp/${fileName}`);
+            if (!response.ok) {
+                throw new Error(`HTTP error! status: ${response.status}`);
+            }
+            productData = await response.json();
+            updateStatusText(`PRODUCT ${currentIndex + 1} LOADED`);
+            displayProductInfo(productData);
+            updateCurrentProductDisplay();
+        } catch (error) {
+            console.error('Error loading product data:', error);
+            alert(`Failed to load product data: ${error.message}`);
+        }
+    }
+
+    document.getElementById('fetch').addEventListener('click', fetchProductData);
+    document.getElementById('next-product').addEventListener('click', function () {
+        currentIndex = (currentIndex + 1) % totalProducts; // Cycle forward
+        loadProductData(currentIndex);
+    });
+
+    document.getElementById('prev-product').addEventListener('click', function () {
+        currentIndex = (currentIndex - 1 + totalProducts) % totalProducts; // Cycle backward
+        loadProductData(currentIndex);
+    });
+
+    // Listen to the generate design button
+    document.getElementById('generate-design').addEventListener('click', function() {
+        if (productData) {
+            // Post message back to the plugin to generate designs, including the currentIndex
+            parent.postMessage({ pluginMessage: { type: 'generateInstances', productData, currentIndex } }, '*');
+        } else {
+            alert('No product data loaded. Please load a product first.');
+        }
+    });
+
+    updateStatusText('ONLINE');
+
+    // Function to update the list of selected instances
+    function updateSelectedInstances(instanceNames) {
+      const selectedInstancesDiv = document.getElementById('selected-instances');
+      selectedInstancesDiv.textContent = instanceNames.length ? instanceNames.join(', ') : 'No templates selected';
+    }
+
+    // Simulate receiving a message from Figma with selected instances
+    window.onmessage = (event) => {
+      const message = event.data.pluginMessage;
+      if (message && message.type === 'updateSelection') {
+        updateSelectedInstances(message.selectedInstanceNames);
+      }
+    };
 });
-
-// Event listener for the Generate button
-document.getElementById('generate').onclick = () => {
-  if (!productData) {
-    alert('Please enter a valid SKU number and wait for it to load.');
-    return;
-  }
-  parent.postMessage({ pluginMessage: { type: 'generateInstances', productData } }, '*');
-};
-
-// Function to display image previews
-function displayImagePreviews(productData) {
-  const images = productData.data.productsByIdentifier[0].items[0].images.slice(0, 3);
-  images.forEach((image, index) => {
-    const imgDiv = document.getElementById(`image${index + 1}`);
-    imgDiv.style.backgroundImage = `url(${image.imageUrl})`;
-    imgDiv.style.backgroundSize = 'cover';
-    imgDiv.style.backgroundPosition = 'center';
-  });
-}
-
-// Handle messages from Figma
-window.onmessage = (event) => {
-  const message = event.data.pluginMessage;
-  if (message.type === 'updateSelection') {
-    updateSelectedInstances(message.selectedInstanceNames);
-  }
-};
-
-// Function to update the list of selected instances
-function updateSelectedInstances(instanceNames) {
-  const selectedInstancesDiv = document.getElementById('selected-instances');
-  selectedInstancesDiv.textContent = instanceNames.length ? instanceNames.join(', ') : 'No templates selected';
-}
-
-// Initialize the status text to "PENDING" on page load
-updateStatusText('ONLINE');
-  </script>
+</script>
 </body>
 </html>

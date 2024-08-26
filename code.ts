@@ -1,5 +1,5 @@
 // Show the plugin's UI with specified width and height
-figma.showUI(__html__, { width: 300, height: 300 }); // Increased height to accommodate list of instance names
+figma.showUI(__html__, { width: 320, height: 400 });
 
 // Send the names of selected instances to the UI when the plugin opens
 updateSelectedInstancesInUI();
@@ -9,6 +9,7 @@ figma.on('selectionchange', () => {
   updateSelectedInstancesInUI();
 });
 
+// Handle messages from the UI
 figma.ui.onmessage = async (msg) => {
   if (msg.type === 'generateInstances') {
     const { productData: jsonData } = msg;
@@ -23,7 +24,7 @@ figma.ui.onmessage = async (msg) => {
       return;
     }
 
-    // Position and process each selected instance
+    // Process each instance
     const viewportCenter = figma.viewport.center;
     let currentX = viewportCenter.x;
 
@@ -49,20 +50,19 @@ function updateSelectedInstancesInUI() {
 
 // Function to parse product data from JSON
 function parseProductData(json: any): ProductData {
-  const product = json.data.productsByIdentifier[0];
   return {
-    productName: product.productName,
-    price: product.priceRange.sellingPrice.lowPrice,
-    imageUrls: product.items[0].images.map((img: any) => img.imageUrl),
-    brand: product.brand,
-    description: product.description,
-    categories: product.categoryTree.map((cat: any) => cat.href.split('/').pop() || '')
+    productName: json.productName,
+    price: json.priceRange.sellingPrice.lowPrice,
+    imageUrls: json.items[0].images.map((img: any) => img.imageUrl),
+    brand: json.brand,
+    description: json.description,
+    categories: json.categoryTree.map((cat: any) => cat.href.split('/').pop() || '')
   };
 }
 
 // Main function to process each selected instance
-async function processInstance(template: InstanceNode, productData: ProductData, x: number, y: number) {
-  const detachedInstance = cloneAndPositionInstance(template, x, y);
+async function processInstance(instance: InstanceNode, productData: ProductData, x: number, y: number) {
+  const detachedInstance = cloneAndPositionInstance(instance, x, y);
   await loadFonts(detachedInstance);
   updateTextLayers(detachedInstance, productData);
   randomizeColors(detachedInstance);

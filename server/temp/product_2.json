@@ -1,0 +1,48 @@
+{
+  "productName": "Mens Nike Springboks Sideline Black Vest",
+  "brand": "Nike",
+  "priceRange": {
+    "sellingPrice": {
+      "lowPrice": 2299.95
+    }
+  },
+  "description": "Elevate your game-day look with the Men's Nike Springboks Sideline Black Vest. Constructed with a durable synthetic fabric, this sleeveless vest features a zip-up neckline for easy layering. Show off your support for the Springboks in style. Perfect for rugby fans everywhere.",
+  "items": [
+    {
+      "images": [
+        {
+          "imageUrl": "https://thefoschini.vtexassets.com/arquivos/ids/159305195/96a82c6e-b454-4cb9-bc31-1e5219f77d95.jpg?v=638600246716630000"
+        },
+        {
+          "imageUrl": "https://thefoschini.vtexassets.com/arquivos/ids/159305197/eb04e7ff-0cb9-4880-ad3b-97f2fbade8de.jpg?v=638600246720330000"
+        },
+        {
+          "imageUrl": "https://thefoschini.vtexassets.com/arquivos/ids/159305199/9da8cf72-7d6f-4990-8e9d-9eb4149ebdf8.jpg?v=638600246724530000"
+        },
+        {
+          "imageUrl": "https://thefoschini.vtexassets.com/arquivos/ids/159305201/1d0bc270-145b-47e5-99e3-70993f2b735f.jpg?v=638600246729070000"
+        },
+        {
+          "imageUrl": "https://thefoschini.vtexassets.com/arquivos/ids/159305204/155281ed-9a21-459b-b12b-e46ea459efb9.jpg?v=638600246733830000"
+        },
+        {
+          "imageUrl": "https://thefoschini.vtexassets.com/arquivos/ids/159305205/8a2c841f-c3ad-485d-a508-3673c1d0328a.jpg?v=638600246737730000"
+        },
+        {
+          "imageUrl": "https://thefoschini.vtexassets.com/arquivos/ids/159305207/da5c0439-5920-46f0-97ef-5ffad834d80b.jpg?v=638600246741630000"
+        }
+      ]
+    }
+  ],
+  "categoryTree": [
+    {
+      "href": "/men"
+    },
+    {
+      "href": "/men/clothing"
+    },
+    {
+      "href": "/men/clothing/tops---t-shirts"
+    }
+  ]
+}

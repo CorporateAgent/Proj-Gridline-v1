@@ -1,0 +1,45 @@
+{
+  "productName": "Nike Women's Gamma Force White/Purple Sneaker",
+  "brand": "Nike",
+  "priceRange": {
+    "sellingPrice": {
+      "lowPrice": 1999.95
+    }
+  },
+  "description": "Step out in style with the Nike Gamma Force sneaker. Crafted from premium leather, this sneaker offers both comfort and durability. With a sleek white and purple design, it's sure to make a statement. Plus, it's easy to return if needed. Perfect for any casual outfit. Supplier style (HF4987-100)",
+  "items": [
+    {
+      "images": [
+        {
+          "imageUrl": "https://thefoschini.vtexassets.com/arquivos/ids/159231800/522ce7c6-6b6a-4376-a8a0-29a18e6d5eec.jpg?v=638599201142630000"
+        },
+        {
+          "imageUrl": "https://thefoschini.vtexassets.com/arquivos/ids/159231805/393e5b0d-09bd-4fe2-ba2e-8219e9875f69.jpg?v=638599201146500000"
+        },
+        {
+          "imageUrl": "https://thefoschini.vtexassets.com/arquivos/ids/159231809/39604de4-5c7b-4c94-95ea-0df7d39c7dc7.jpg?v=638599201150230000"
+        },
+        {
+          "imageUrl": "https://thefoschini.vtexassets.com/arquivos/ids/159231812/21a15c65-bf80-4b40-880f-81d7cea98d44.jpg?v=638599201155200000"
+        },
+        {
+          "imageUrl": "https://thefoschini.vtexassets.com/arquivos/ids/159231815/50588805-f1f0-42d9-82d9-8f0b2a59e0c6.jpg?v=638599201159870000"
+        },
+        {
+          "imageUrl": "https://thefoschini.vtexassets.com/arquivos/ids/159231820/776fdc8b-abfd-4915-9121-dba594bcda51.jpg?v=638599201164100000"
+        }
+      ]
+    }
+  ],
+  "categoryTree": [
+    {
+      "href": "/women"
+    },
+    {
+      "href": "/women/shoes"
+    },
+    {
+      "href": "/women/shoes/sneakers"
+    }
+  ]
+}

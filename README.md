@@ -1,44 +1,18 @@
-# v1 Gridline - Figma Plugin
+# Gridline System v0.2
 
-An attempt at streamlining the integration of product data into Figma designs by generating designs based on product information.
- The plugin allows designers to dynamically generate design components that reflect real-world product data—such as product images, names, prices, categories, and more directly within Figma. By reducing manual input and improving accuracy, Gridline accelerates the designers workflow, making it a potentially advantagious tool for any design team working with bash product data. <br><br>![AltText](/images/preview.gif) <br>
+An attempt at streamlining the integration of product data into Figma by generating instances based on product information & existing components in team library. Allowing designers to dynamically generate designs that reflect Bash product data directly within any organization Figma page/board.The plugin automates the creation of design instances within Figma by cloning design components. <br><br>![AltText](/images/preview_small.gif) <br>
+
 
 ## Key Features
 
 <table>
   <tr>
     <td><strong>Component Cloning</strong></td>
-    <td>The plugin automates the creation of design instances within Figma by cloning design components. This feature enables designers to quickly generate multiple instances of a component with the included product information.</td>
+    <td> This feature enables designers to quickly generate multiple instances of a component with the included product information.</td>
   </tr>
   <tr>
-    <td><strong>Real-Time Data Integration:</strong></td>
-    <td>The plugin integrates real-time product data directly into Figma, allowing designers to fetch and apply the latest information to the cloned instances, ensuring that all design elements are synchronized with the most current data.</td>
-  </tr>
-</table>
-
-
-##  Overview
-
-<table>
-  <tr>
-    <td><span style="color:#8B8BF1;">SKU Input:</span></td>
-    <td>Users start by entering a SKU number in the plugin’s input field. The plugin recognizes when a valid SKU has been entered (6 or 7 digits) and automatically initiates a data fetch.</td>
-  </tr>
-  <tr>
-    <td><span style="color:#8B8BF1;">Data Fetching:</span></td>
-    <td>Upon detecting a valid SKU, the plugin sends a request to an external server. The server processes this request by querying a GraphQL endpoint to retrieve product data, which it then saves as a JSON file.</td>
-  </tr>
-  <tr>
-    <td><span style="color:#8B8BF1;">Visual Feedback:</span></td>
-    <td>Throughout the process, the plugin updates the user on its current status through status text and color-coded indicators.</td>
-  </tr>
-  <tr>
-    <td><span style="color:#8B8BF1;">Image Preview:</span></td>
-    <td>After successfully retrieving product data, the plugin displays up to three product images in the UI, providing a preview of the product that will be inserted into the Figma design.</td>
-  </tr>
-  <tr>
-    <td><span style="color:#8B8BF1;">Instance Generation:</span></td>
-    <td>When ready, the user clicks the “Generate Design” button. The plugin then applies the fetched product data to the selected Figma components, generating design instances that are fully populated with the product details.</td>
+    <td><strong>Data Integration</strong></td>
+    <td>Integrates real-time product data to the cloned instances, ensuring that all design elements are synchronized with the most current data.</td>
   </tr>
 </table>
 
@@ -70,6 +44,37 @@ node server/server.js
 Reference this directory in Figma via by navigating through <br> 
 *Plugins > Developement > Manage Plugins In Development > Import Plugin From Manifest*
 <br>
+<br>
+#  Overview
+
+<table>
+  <tr>
+<td><span style="color:#8B8BF1;">User Input</span></td>
+<td>Users can enter any search term in the input field. The app processes the input to by sending the information to the <span style="color: grey;">server.js</span> </td>
+  </tr>
+  <tr>
+    <td><span style="color:#8B8BF1;">Data Handling</span></td>
+    <td>The <span style="color: grey;">server.js</span>  processes this request by querying a GraphQL endpoint to retrieve product data, which it then saves as a set of JSON files</td>
+  </tr>
+  <tr>
+    <td><span style="color:#8B8BF1;">Visual Feedback</span></td>
+    <td>Throughout the process, the plugin updates the user on its current status through color-coded indicators.</td>
+  </tr>
+  <tr>
+  <td><span style="color:#8B8BF1;">Navigation</span></td>
+<td>The app displays product images in the UI, allowing users to preview the product that will be inserted into the Figma design. Users can cycle through different products using navigation buttons</td>
+  </tr>
+  <tr>
+    <td><span style="color:#8B8BF1;">Design Generation</span></td>
+    <td>When ready, the user is able to Generate Designs by selecting templates & clicking Generate button, the app then applies the fetched product data to the selected Figma components, generating design instances that are fully populated with the product details.</td>
+  </tr>
+</table>
+
+## Frontend (Figma Plugin UI)
+The user interface is built using HTML, CSS, and Typescript(JavaScript.) It enables users to interact with the plugin, enter SKUs, view product images, and trigger the generation of design instances. The <span style="color:#8B8BF1;">ui.html </span> file serves as the user interface for the Gridline plugin. It is divided into several sections, each serving a specific purpose: <br><br>
+![AltText](/images/structure.png)
+
+
 <br>
 
 # System Architecture
@@ -109,175 +114,41 @@ This command installs the above key dependencies:
 npm install express node-fetch cors
 ```
 
----
-## Frontend (Figma Plugin UI)
-The user interface is built using HTML, CSS, and Typescript(JavaScript.) It enables users to interact with the plugin, enter SKUs, view product images, and trigger the generation of design instances. The <span style="color:#8B8BF1;">ui.html </span> file serves as the user interface for the Gridline plugin. It is divided into 3 key sections, each serving a specific purpose:
 
-### **JavaScript Functionality**
+
+## Functionality
 <table>
 
  <tr>
-  <td><strong> Image Preview Section</strong></td>
+  <td><strong> VTEX</strong></td>
   <td>
-    The <span style="color: grey;"> id="json-loaded" </span> Displays the current status of the plugin, such as "PENDING," "READING," "GETTING PRODUCT," and "JSON LOADED." The color of the text, icon, and border changes according to the status.<br>
-    <span style="color:grey;">id="image-previews"</span> Holds up to three image previews fetched from the product data.
+ The VTEX Database is the external data source that stores product information. The server queries this database using GraphQL to retrieve product details like images, prices, descriptions, and categories based on the SKU provided by the Figma Plugin. 
+
+The data fetched from the VTEX Database is critical for accurately populating the design instances in Figma.
   </td>
 </tr>
 <tr>
-  <td><strong>SKU Input Section</strong></td>
+  <td><strong>Figma Templates</strong></td>
   <td>
-    <span style="color:grey;">(< input type="text" id="sku-input" ></span> is used as the text input field where users enter the SKU number. It triggers the process of fetching product data when a valid SKU is detected.
-    <span style="color:grey;">id="selected-instances" </span>: Displays the names of the selected instances in Figma. This updates dynamically based on user selection.
+    Design Templates in Figma are pre-defined design elements that serve as the foundation for the generated instances. 
+
+When a valid SKU is processed and product data is retrieved from the VTEX Database, the Figma Plugin uses this data to populate the templates with relevant information.
+
+The updated templates are then used to create new design instances within Figma, streamlining the design process and ensuring consistency across assets.
   </td>
 </tr>
 <tr>
-  <td><strong>Generate Button</strong></td>
+  <td><strong>Figma Plugin</strong></td>
   <td>
-    The generate instance button <span style="color:grey;">id="generate" class="generate-button"</span> when clicked, this button initiates the process of applying the fetched product data to the selected instances in Figma.
+ The Figma Plugin is the user interface through which designers interact with the Gridline system. 
+
+It allows users to input SKU numbers and automatically sends these SKUs to the server once a valid number is detected. 
+
+The plugin doesn’t handle the fetching of product data directly; instead, it relies on the server to perform this task. The server returns a JSON file with the product data, which the plugin then uses to dynamically generate design instances in Figma.
+
+The plugin also provides real-time feedback on the status of the data retrieval process and integrates with the Figma API to manage selected design templates and generate new instances based on the fetched data.
   </td>
-  
-</tr>
-<tr>
-  <td><strong>CSS Styling</strong></td>
-  <td>
-    The<span style="color:grey;"> `.json-loaded` class </span>is used to style the status indicator. It includes a text element (`.json-loaded-text`) and an icon (`.json-loaded-icon`), both of which change color based on the plugin's current state.
-  </td>
-  
 </tr>
 </table>
 
-
-
-### **JavaScript Functionality**
-
-The JavaScript file is responsible for the interactive functionality of the Gridline plugin, including responding to user input, fetching data, and updating the UI.
-
-- **SKU Input Event Listener**:
-  - The SKU input field listens for changes (`input` event). It checks if the SKU length is either 6 or 7 digits, and if so, it triggers the `fetchProductData` function.
-  - The status text is updated to "READING" when the user is typing and "PENDING" when the input is cleared.
-
-```javascript
-document.getElementById('sku-input').addEventListener('input', () => {
-  const sku = document.getElementById('sku-input').value.trim();
-  updateStatusText(sku ? 'READING' : 'PENDING');
-  if (sku.length === 6 || sku.length === 7) {
-    fetchProductData(sku);
-  }
-});
-```
-
-- **Generate Button Event Listener**:
-  - The "Generate Instance" button listens for click events (`onclick`). If product data has been successfully fetched, it sends this data to the TypeScript part of the plugin via `parent.postMessage`.
-
-```javascript
-document.getElementById('generate').onclick = () => {
-  if (!productData) {
-    alert('Please enter a valid SKU number and wait for it to load.');
-    return;
-  }
-  parent.postMessage({ pluginMessage: { type: 'generateInstances', productData } }, '*');
-};
-```
-
-##### **2.2 Fetching Product Data**
-
-The `fetchProductData` function is the core of the plugin's functionality. It sends the SKU to the backend server, retrieves the product data, and updates the UI with the relevant information.
-
-- **Fetch Request**:
-  - The function sends a POST request to the local Node.js server with the SKU as the payload. The server processes this request by querying an external GraphQL endpoint, saving the result as a JSON file.
-
-```javascript
-const response = await fetch('http://localhost:3000/sku', {
-  method: 'POST',
-  headers: {
-    'Content-Type': 'application/json',
-  },
-  body: JSON.stringify({ sku }),
-});
-```
-
-- **Updating the UI**:
-  - Upon successfully retrieving the product data, the function updates the status text to "JSON LOADED" and displays the image previews.
-  - If the fetch fails, an error message is logged, and the user is alerted.
-
-```javascript
-const jsonResponse = await fetch('http://localhost:3000/temp/productData.json');
-productData = await jsonResponse.json();
-
-updateStatusText('JSON LOADED');
-displayImagePreviews(productData);
-```
-
-##### **2.3 Updating UI Elements**
-
-The UI is dynamically updated based on the current state of the plugin:
-
-- **Status Text and Border Colors**:
-  - The `updateStatusText` function updates the status text, border color, and icon color based on the plugin's current state. This provides clear feedback to the user at every step of the process.
-
-```javascript
-function updateStatusText(text) {
-  const statusText = document.getElementById('json-loaded-text');
-  const statusBorder = document.getElementById('json-loaded');
-  const statusIcon = document.getElementById('json-loaded-icon');
-
-  statusText.textContent = text;
-
-  // Define the color for each status
-  let color;
-  switch (text) {
-    case 'PENDING':
-      color = '#FFA500'; // Orange
-      break;
-    case 'READING':
-      color = '#FFD700'; // Gold
-      break;
-    case 'GETTING PRODUCT':
-      color = '#1E90FF'; // Dodger Blue
-      break;
-    case 'JSON LOADED':
-      color = '#8AFF61'; // Green
-      break;
-  }
-
-  // Apply the color to the border, icon, and text
-  statusBorder.style.borderColor = color;
-  statusIcon.style.backgroundColor = color;
-  statusText.style.color = color;
-}
-```
-
-- **Image Previews**:
-  - The `displayImagePreviews` function extracts up to three images from the product data and displays them in the designated area of the UI.
-
-```javascript
-function displayImagePreviews(productData) {
-  const images = productData.data.productsByIdentifier[0].items[0].images.slice(0, 3);
-  images.forEach((image, index) => {
-    const imgDiv = document.getElementById(`image${index + 1}`);
-    imgDiv.style.backgroundImage = `url(${image.imageUrl})`;
-    imgDiv.style.backgroundSize = 'cover';
-    imgDiv.style.backgroundPosition = 'center';
-  });
-}
-```
-
-##### **2.4 Handling Messages from Figma**
-
-The plugin listens for messages from the Figma environment, particularly updates about the selected instances. The `updateSelectedInstances` function updates the UI to reflect the selected instances in Figma.
-
-```javascript
-window.onmessage = (event) => {
-  const message = event.data.pluginMessage;
-  if (message.type === 'updateSelection') {
-    updateSelectedInstances(message.selectedInstanceNames);
-  }
-};
-```
-
 ---
-
-
-
-# Proj-Gridline
-# Proj-Gridline

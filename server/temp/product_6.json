@@ -1,0 +1,45 @@
+{
+  "productName": "Women's Nike Victori One Pink/Silver Slides",
+  "brand": "Nike",
+  "priceRange": {
+    "sellingPrice": {
+      "lowPrice": 599.95
+    }
+  },
+  "description": "From the beach to gardening to sitting on the sofa, the Women's Nike Victori One Slides perfects a classic design. Delivering lightweight comfort that's easy to wear, it features new softer, more responsive foam. The contoured grip pattern helps cradle and hold your foot in place.",
+  "items": [
+    {
+      "images": [
+        {
+          "imageUrl": "https://thefoschini.vtexassets.com/arquivos/ids/159138969/eaded6f9-9473-4482-867d-04b4b628688b.jpg?v=638598294812730000"
+        },
+        {
+          "imageUrl": "https://thefoschini.vtexassets.com/arquivos/ids/159138973/ee1ec2b8-ad04-4277-a9cb-b4115680421b.jpg?v=638598294816330000"
+        },
+        {
+          "imageUrl": "https://thefoschini.vtexassets.com/arquivos/ids/159138976/da721eba-e97d-4e6d-a6f0-2f333552d23d.jpg?v=638598294819930000"
+        },
+        {
+          "imageUrl": "https://thefoschini.vtexassets.com/arquivos/ids/159138980/5a6ce7d5-9617-44fb-8613-322eb2d3a70a.jpg?v=638598294824630000"
+        },
+        {
+          "imageUrl": "https://thefoschini.vtexassets.com/arquivos/ids/159138984/382c2801-a446-4321-95d6-31e641e94123.jpg?v=638598294828830000"
+        },
+        {
+          "imageUrl": "https://thefoschini.vtexassets.com/arquivos/ids/159138988/21cfc208-1607-4a6f-8cec-bc1912801ce8.jpg?v=638598294833200000"
+        }
+      ]
+    }
+  ],
+  "categoryTree": [
+    {
+      "href": "/women"
+    },
+    {
+      "href": "/women/shoes"
+    },
+    {
+      "href": "/women/shoes/slides---flip-flops"
+    }
+  ]
+}

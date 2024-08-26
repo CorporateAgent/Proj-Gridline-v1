@@ -1,0 +1,39 @@
+{
+  "productName": "Nike Unisex Air Force 1 Patch Black Cap",
+  "brand": "Nike",
+  "priceRange": {
+    "sellingPrice": {
+      "lowPrice": 599.95
+    }
+  },
+  "description": "This classic baseball cap pays homage to one of the most legendary sneakers in the game: the Air Force 1. Its unstructured crown offers a relaxed, casual look that pairs well with its clean, curved brim and embroidered AF-1 patch. Supplier style_FZ2121-010.",
+  "items": [
+    {
+      "images": [
+        {
+          "imageUrl": "https://thefoschini.vtexassets.com/arquivos/ids/159303835/d8105dac-8b38-4e3c-a44b-e44d9beeeac5.jpg?v=638600229727130000"
+        },
+        {
+          "imageUrl": "https://thefoschini.vtexassets.com/arquivos/ids/159303837/5438a342-53fb-4bf3-a379-8656cab4122f.jpg?v=638600229733400000"
+        },
+        {
+          "imageUrl": "https://thefoschini.vtexassets.com/arquivos/ids/159303840/43f1efaa-6094-442c-b503-43f25380cdcb.jpg?v=638600229740330000"
+        },
+        {
+          "imageUrl": "https://thefoschini.vtexassets.com/arquivos/ids/159303843/63a2df13-94a1-4e58-ba34-fd73ec8206e2.jpg?v=638600229745770000"
+        }
+      ]
+    }
+  ],
+  "categoryTree": [
+    {
+      "href": "/men"
+    },
+    {
+      "href": "/men/accessories"
+    },
+    {
+      "href": "/men/accessories/hats---caps"
+    }
+  ]
+}

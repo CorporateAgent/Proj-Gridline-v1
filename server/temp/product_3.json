@@ -1,0 +1,51 @@
+{
+  "productName": "Nike Women's Air Max DN Silver/Grey Sneaker",
+  "brand": "Nike",
+  "priceRange": {
+    "sellingPrice": {
+      "lowPrice": 3299.95
+    }
+  },
+  "description": "Get noticed in the Nike Air Max DN Silver/Grey Sneaker. Built with synthetic fabric, these sneakers are returnable and perfect for adults who love style and comfort. Step up your shoe game with these premium kicks that stand out from the crowd. Supplier style (HJ9638-001)",
+  "items": [
+    {
+      "images": [
+        {
+          "imageUrl": "https://thefoschini.vtexassets.com/arquivos/ids/159192908/3dc85584-363b-43ae-b0d0-e778378cac10.jpg?v=638598400451930000"
+        },
+        {
+          "imageUrl": "https://thefoschini.vtexassets.com/arquivos/ids/159192910/f1c0b21a-05be-43c4-bfb6-dd90dd850f9a.jpg?v=638598400456030000"
+        },
+        {
+          "imageUrl": "https://thefoschini.vtexassets.com/arquivos/ids/159192912/0f3b67fc-cf52-4bc0-9369-460b35cc6f8e.jpg?v=638598400459630000"
+        },
+        {
+          "imageUrl": "https://thefoschini.vtexassets.com/arquivos/ids/159192913/da008bce-e13f-4cf4-8476-fdd9e8091f5b.jpg?v=638598400463530000"
+        },
+        {
+          "imageUrl": "https://thefoschini.vtexassets.com/arquivos/ids/159192915/7ccb2f83-fbbe-47c5-8e62-cf5a67b7884e.jpg?v=638598400467130000"
+        },
+        {
+          "imageUrl": "https://thefoschini.vtexassets.com/arquivos/ids/159192917/eee91b43-0d93-4656-8670-05ceead4edfc.jpg?v=638598400470900000"
+        },
+        {
+          "imageUrl": "https://thefoschini.vtexassets.com/arquivos/ids/159192919/280c111c-1df7-4d82-bda2-914d39657d6c.jpg?v=638598400475930000"
+        },
+        {
+          "imageUrl": "https://thefoschini.vtexassets.com/arquivos/ids/159192921/235062cc-bb41-4962-8d60-acc575a7ed52.jpg?v=638598400480330000"
+        }
+      ]
+    }
+  ],
+  "categoryTree": [
+    {
+      "href": "/women"
+    },
+    {
+      "href": "/women/shoes"
+    },
+    {
+      "href": "/women/shoes/sneakers"
+    }
+  ]
+}

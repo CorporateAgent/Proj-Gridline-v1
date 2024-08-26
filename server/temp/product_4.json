@@ -1,0 +1,45 @@
+{
+  "productName": "Nike Kids White Just Do It Short Sleeve Tee - Cotton",
+  "brand": "Nike",
+  "priceRange": {
+    "sellingPrice": {
+      "lowPrice": 429.95
+    }
+  },
+  "description": "The Nike Kids White Just Do It Short Sleeve Tee is made of soft cotton for all-day comfort. With a classic design featuring the iconic \"Just Do It\" slogan, this tee is perfect for active kids. It's easy to care for. Perfect for everyday wear.",
+  "items": [
+    {
+      "images": [
+        {
+          "imageUrl": "https://thefoschini.vtexassets.com/arquivos/ids/159235771/c088d9b7-5c1f-4ace-94d5-a9b27bd4bf69.jpg?v=638599224471130000"
+        },
+        {
+          "imageUrl": "https://thefoschini.vtexassets.com/arquivos/ids/159235774/41b6951d-c988-4188-b37e-9e9f052dc638.jpg?v=638599224478070000"
+        },
+        {
+          "imageUrl": "https://thefoschini.vtexassets.com/arquivos/ids/159235778/1c75e488-85fb-40db-b89a-b12675c8a934.jpg?v=638599224485270000"
+        },
+        {
+          "imageUrl": "https://thefoschini.vtexassets.com/arquivos/ids/159235782/854058c1-d2b3-400d-a2d0-3425a3e58080.jpg?v=638599224492000000"
+        },
+        {
+          "imageUrl": "https://thefoschini.vtexassets.com/arquivos/ids/159235787/69ac6468-d3d2-4792-b452-efb6b5410d57.jpg?v=638599224498630000"
+        }
+      ]
+    }
+  ],
+  "categoryTree": [
+    {
+      "href": "/kids"
+    },
+    {
+      "href": "/kids/boys"
+    },
+    {
+      "href": "/kids/boys/clothing"
+    },
+    {
+      "href": "/kids/boys/clothing/tops"
+    }
+  ]
+}
