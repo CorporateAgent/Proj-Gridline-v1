@@ -50,6 +50,7 @@ Templates must be prepared with the above naming conventions to ensure that the 
   <tr>
 </table>
 <br>
+
 ## __Set Up__
 ### 1. Install Node.js and npm
 
