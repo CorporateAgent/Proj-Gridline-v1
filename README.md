@@ -1,6 +1,6 @@
 # Gridline System v0.2
 
-An attempt at streamlining the integration of product data into Figma by generating instances based on product information & existing components in team library. Allowing designers to dynamically generate designs that reflect Bash product data directly within any organization Figma page/board.The plugin automates the creation of design instances within Figma by cloning design components. <br><br>![AltText](/images/preview_small.gif) <br>
+An attempt at streamlining the integration of product data into Figma designs, the plugin enables designers to generate design instances using predefined components from the team library. It automatically populates these instances with Bash product data. By cloning existing design components, the plugin simplifies the application of product details in design prototypes, ensuring designers have access to the most up-to-date and relevant product information in their designs. <br><br>![AltText](/images/preview_small.gif) <br>
 
 
 ## Key Features
@@ -15,6 +15,41 @@ An attempt at streamlining the integration of product data into Figma by generat
     <td>Integrates real-time product data to the cloned instances, ensuring that all design elements are synchronized with the most current data.</td>
   </tr>
 </table>
+
+## Schema 
+Templates must be prepared with the below naming conventions to ensure that the plugin can correctly identify and populate data into the Figma designs<br>
+<table>
+  <tr>
+    <td><span style="color:#8B8BF1;">Layer Naming</span></td>
+    <td>Layers should be named according to their content to ensure the plugin correctly applies data:
+      <ul>
+        <li><strong>productName:</strong> Layer for the product's name.</li>
+        <li><strong>price:</strong> Layer for displaying the product's price, including currency.</li>
+        <li><strong>brand:</strong> Layer for the brand name.</li>
+        <li><strong>description:</strong> Layer for a brief description of the product.</li>
+        <li><strong>category1, category2, category3:</strong> Layers for product categories.</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td><span style="color:#8B8BF1;">Image Layers</span></td>
+    <td>Image layers must be named systematically to correlate with image data:
+      <ul>
+        <li><strong>imageURL1, imageURL2, imageURL3:</strong> Naming pattern for image layers where images will be dynamically inserted.</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td><span style="color:#8B8BF1;">Color Customization</span></td>
+    <td>Layers intended for dynamic coloring should follow a naming convention that includes a prefix:
+      <ul>
+        <li><strong>randomize1, randomize2, randomize3:</strong> Layers that will receive random colors from the specified palette.</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+</table>
+<br>
 
 ## __Set Up__
 ### 1. Install Node.js and npm
