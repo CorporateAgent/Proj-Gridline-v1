@@ -17,7 +17,7 @@ An attempt at streamlining the integration of product data into Figma designs, t
 </table>
 
 ## Schema 
-Templates must be prepared with the above naming conventions to ensure that the plugin can correctly identify and populate data into the Figma designs<br>
+Templates must be prepared with the below naming conventions to ensure that the plugin can correctly identify and populate data into the Figma designs<br>
 <table>
   <tr>
     <td><span style="color:#8B8BF1;">Layer Naming</span></td>
