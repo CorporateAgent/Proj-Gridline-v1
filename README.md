@@ -103,7 +103,7 @@ Templates must be prepared with the above naming conventions to ensure that the 
   </tr>
   <tr>
 </table>
-
+<br>
 ## Frontend (Figma Plugin UI)
 The user interface is built using HTML, CSS, and Typescript(JavaScript.) It enables users to interact with the plugin, enter SKUs, view product images, and trigger the generation of design instances. The <span style="color:#8B8BF1;">ui.html </span> file serves as the user interface for the Gridline plugin. It is divided into several sections, each serving a specific purpose: <br><br>
 ![AltText](/images/structure.png)
