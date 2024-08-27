@@ -70,7 +70,7 @@ Reference this directory in Figma via by navigating through <br>
   </tr>
 </table>
 
-## Schema 
+## Schema For Design
 Templates must be prepared with the above naming conventions to ensure that the plugin can correctly identify and populate data into the Figma designs<br>
 <table>
   <tr>
