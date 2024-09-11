@@ -4,7 +4,7 @@ An attempt at streamlining the integration of product data into Figma designs, b
 
 
 
-## Schema 
+## Schema (aka HOW TO USE THIS THING)
 Templates must be prepared with the below naming conventions to ensure that the plugin can correctly identify and populate data into the Figma designs<br>
 <table>
   <tr>
