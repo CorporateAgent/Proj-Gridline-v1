@@ -3,18 +3,6 @@
 An attempt at streamlining the integration of product data into Figma designs, by automatically populating instances with Bash product data by cloning existing design components, the plugin simplifies the application of product details in figma design workflows. Ensuring designers have access to the most up-to-date and relevant product information in their work. <br><br>![AltText](/images/preview_small.gif) <br>
 
 
-## Key Features
-
-<table>
-  <tr>
-    <td><strong>Component Cloning</strong></td>
-    <td> This feature enables designers to quickly generate multiple instances of a component with the included product information.</td>
-  </tr>
-  <tr>
-    <td><strong>Data Integration</strong></td>
-    <td>Integrates real-time product data to the cloned instances, ensuring that all design elements are synchronized with the most current data.</td>
-  </tr>
-</table>
 
 ## Schema 
 Templates must be prepared with the below naming conventions to ensure that the plugin can correctly identify and populate data into the Figma designs<br>
