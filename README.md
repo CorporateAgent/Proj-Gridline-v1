@@ -1,6 +1,7 @@
 # Gridline System v0.2
 
-An attempt at streamlining the integration of product data into Figma designs, by automatically populating instances with Bash product data by cloning existing design components, the plugin simplifies the application of product details in figma design workflows. Ensuring designers have access to the most up-to-date and relevant product information in their work. <br><br>![AltText](/images/preview_small.gif) <br>
+An attempt at streamlining the integration of product data into Figma designs, by automatically populating instances with Bash product data by cloning existing design components.
+The plugin simplifies the application of product details in figma design workflows,ensuring designers have access to the most up-to-date and relevant product information in their work. <br><br>![AltText](/images/preview_small.gif) <br>
 
 
 
