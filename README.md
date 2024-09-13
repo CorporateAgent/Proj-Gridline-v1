@@ -1,4 +1,4 @@
-# Gridline System v0.2
+# Gridline System v1.2
 
 An attempt at streamlining the integration of product data into Figma designs, 
 by automatically populating instances with Bash product data by cloning existing design components.
