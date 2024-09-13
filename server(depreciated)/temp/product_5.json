@@ -1,0 +1,51 @@
+{
+  "productName": "Womens Nike Court Vision Next Nature Black/White Low Sneakers",
+  "brand": "Nike",
+  "priceRange": {
+    "sellingPrice": {
+      "lowPrice": 1499.95
+    }
+  },
+  "description": "In love with the classic look of '80s basketball but have a thing for the fast-paced culture of today's game? Meet the Nike Court Vision Low Next Nature. Made from at least 20% recycled materials by weight, its crisp upper and stitched overlays are inspired by the days of hook-shots and tube socks. The padded collar and rubber outsole bring comfort and traction for your world.",
+  "items": [
+    {
+      "images": [
+        {
+          "imageUrl": "https://thefoschini.vtexassets.com/arquivos/ids/157265231/4ed3003e-f766-488e-8b8c-b8a9db386744.jpg?v=638578935885600000"
+        },
+        {
+          "imageUrl": "https://thefoschini.vtexassets.com/arquivos/ids/157265237/3fb00541-00a8-4aad-b76e-faaaeb755e0b.jpg?v=638578935891700000"
+        },
+        {
+          "imageUrl": "https://thefoschini.vtexassets.com/arquivos/ids/157265242/e10e2eb3-c3b1-41a8-9275-8c41eb207299.jpg?v=638578935897430000"
+        },
+        {
+          "imageUrl": "https://thefoschini.vtexassets.com/arquivos/ids/157265248/a8a37b68-9a81-4930-b90e-5e8d573de712.jpg?v=638578935903700000"
+        },
+        {
+          "imageUrl": "https://thefoschini.vtexassets.com/arquivos/ids/157265254/be369a11-fcfc-4080-b0c4-add3eb70eeaf.jpg?v=638578935910870000"
+        },
+        {
+          "imageUrl": "https://thefoschini.vtexassets.com/arquivos/ids/157265260/fff1e6b6-1c2d-43d3-809f-bebeccc3d490.jpg?v=638578935917200000"
+        },
+        {
+          "imageUrl": "https://thefoschini.vtexassets.com/arquivos/ids/157265268/19ac1b26-4597-4b21-adc6-914efe03789b.jpg?v=638578935923600000"
+        },
+        {
+          "imageUrl": "https://thefoschini.vtexassets.com/arquivos/ids/157265275/de45388e-aeaf-4b6d-bd83-3ef63cc31d78.jpg?v=638578935928900000"
+        }
+      ]
+    }
+  ],
+  "categoryTree": [
+    {
+      "href": "/women"
+    },
+    {
+      "href": "/women/shoes"
+    },
+    {
+      "href": "/women/shoes/sneakers"
+    }
+  ]
+}

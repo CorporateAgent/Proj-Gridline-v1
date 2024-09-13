@@ -1,0 +1,39 @@
+{
+  "productName": "Mens Nike Springboks Unity Long Sleeve Old School Rugby Jersey",
+  "brand": "Nike",
+  "priceRange": {
+    "sellingPrice": {
+      "lowPrice": 1799.95
+    }
+  },
+  "description": "The new Bok kit combines Nike’s innovation with South African pride through the subtle use of colour and design. Informed by the elite player’s need for comfort, durability, and support, it’s been engineered to deliver exactly what athletes want to experience during play.\n\nWorking closely with the Springboks, a kit was designed to reflect both the team’s history and South African culture.",
+  "items": [
+    {
+      "images": [
+        {
+          "imageUrl": "https://thefoschini.vtexassets.com/arquivos/ids/157571284/59926821.jpg?v=638579349011570000"
+        },
+        {
+          "imageUrl": "https://thefoschini.vtexassets.com/arquivos/ids/157571288/59926821_01.jpg?v=638579349016100000"
+        },
+        {
+          "imageUrl": "https://thefoschini.vtexassets.com/arquivos/ids/157571293/59926821_02.jpg?v=638579349020870000"
+        },
+        {
+          "imageUrl": "https://thefoschini.vtexassets.com/arquivos/ids/157571300/59926821_SW.jpg?v=638579349026800000"
+        }
+      ]
+    }
+  ],
+  "categoryTree": [
+    {
+      "href": "/men"
+    },
+    {
+      "href": "/men/clothing"
+    },
+    {
+      "href": "/men/clothing/tops---t-shirts"
+    }
+  ]
+}

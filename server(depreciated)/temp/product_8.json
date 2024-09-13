@@ -1,0 +1,45 @@
+{
+  "productName": "Junior Infant Nike Revolution 7 Navy/Red/White Shoes",
+  "brand": "Nike",
+  "priceRange": {
+    "sellingPrice": {
+      "lowPrice": 549.95
+    }
+  },
+  "description": "Let your kid flash, dash and blast into the day with the help of shoes made especially for fun. No, they're not loaded with sugar or toys, but they do come in awesome colours and designs that'll have your little one reaching for them every day of the year.",
+  "items": [
+    {
+      "images": [
+        {
+          "imageUrl": "https://thefoschini.vtexassets.com/arquivos/ids/151051413/60021229.jpg?v=638485490384330000"
+        },
+        {
+          "imageUrl": "https://thefoschini.vtexassets.com/arquivos/ids/151051415/60021229_01.jpg?v=638485490384630000"
+        },
+        {
+          "imageUrl": "https://thefoschini.vtexassets.com/arquivos/ids/151051418/60021229_02.jpg?v=638485490384970000"
+        },
+        {
+          "imageUrl": "https://thefoschini.vtexassets.com/arquivos/ids/151051419/60021229_03.jpg?v=638485490385100000"
+        },
+        {
+          "imageUrl": "https://thefoschini.vtexassets.com/arquivos/ids/151051420/60021229_SW.jpg?v=638485490385600000"
+        }
+      ]
+    }
+  ],
+  "categoryTree": [
+    {
+      "href": "/kids"
+    },
+    {
+      "href": "/kids/boys"
+    },
+    {
+      "href": "/kids/boys/shoes"
+    },
+    {
+      "href": "/kids/boys/shoes/sneakers"
+    }
+  ]
+}

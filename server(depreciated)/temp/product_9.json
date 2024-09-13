@@ -1,0 +1,45 @@
+{
+  "productName": "Nike Everyday Cushion Crew White 3 Pack Socks",
+  "brand": "Nike",
+  "priceRange": {
+    "sellingPrice": {
+      "lowPrice": 299.95
+    }
+  },
+  "description": "Power through your workout with the Nike Everyday Cushioned Socks. The thick terry sole gives you extra comfort for foot drills and lifts, while a ribbed arch band wraps your midfoot for a supportive feel.",
+  "items": [
+    {
+      "images": [
+        {
+          "imageUrl": "https://thefoschini.vtexassets.com/arquivos/ids/157199805/59595573.jpg?v=638578878290970000"
+        },
+        {
+          "imageUrl": "https://thefoschini.vtexassets.com/arquivos/ids/157199814/59595573_01.jpg?v=638578878298770000"
+        },
+        {
+          "imageUrl": "https://thefoschini.vtexassets.com/arquivos/ids/157199823/59595573_02.jpg?v=638578878305570000"
+        },
+        {
+          "imageUrl": "https://thefoschini.vtexassets.com/arquivos/ids/157199831/59595573_03.jpg?v=638578878311870000"
+        },
+        {
+          "imageUrl": "https://thefoschini.vtexassets.com/arquivos/ids/157199841/59595573_04.jpg?v=638578878319330000"
+        },
+        {
+          "imageUrl": "https://thefoschini.vtexassets.com/arquivos/ids/157199853/59595573_SW.jpg?v=638578878328500000"
+        }
+      ]
+    }
+  ],
+  "categoryTree": [
+    {
+      "href": "/men"
+    },
+    {
+      "href": "/men/clothing"
+    },
+    {
+      "href": "/men/clothing/socks"
+    }
+  ]
+}

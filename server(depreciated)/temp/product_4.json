@@ -1,0 +1,54 @@
+{
+  "productName": "Junior Pre-School Nike Court Borough Recraft Orange/Navy/Blue Low Sneakers",
+  "brand": "Nike",
+  "priceRange": {
+    "sellingPrice": {
+      "lowPrice": 849.95
+    }
+  },
+  "description": "Run (don't walk) to your new favourite Borough. Made for the long haul, this \"recrafted\" legend uses a combination of durable materials on the upper and outsole to achieve a classic look made in a whole new way. A redesigned toe box and midfoot give your feet a little extra room so you can run, jump and play just a bit longer and a little bit harder.",
+  "items": [
+    {
+      "images": [
+        {
+          "imageUrl": "https://thefoschini.vtexassets.com/arquivos/ids/157665720/cf1a0c6f-960c-42d8-9d49-9ad347fe850d.jpg?v=638579430472970000"
+        },
+        {
+          "imageUrl": "https://thefoschini.vtexassets.com/arquivos/ids/157665727/eff53316-b664-40aa-8125-3ec56f9ca1fb.jpg?v=638579430477670000"
+        },
+        {
+          "imageUrl": "https://thefoschini.vtexassets.com/arquivos/ids/157665732/f726ce41-dbab-4595-b88b-5964d97bcd02.jpg?v=638579430481430000"
+        },
+        {
+          "imageUrl": "https://thefoschini.vtexassets.com/arquivos/ids/157665739/23fbbc0e-f44a-4633-9201-51c91b46d323.jpg?v=638579430486900000"
+        },
+        {
+          "imageUrl": "https://thefoschini.vtexassets.com/arquivos/ids/157665745/0ccc7fa2-c58a-4ea2-a71b-85e794c67f06.jpg?v=638579430492700000"
+        },
+        {
+          "imageUrl": "https://thefoschini.vtexassets.com/arquivos/ids/157665752/7519c86a-059c-4769-8e87-22bc4e60084e.jpg?v=638579430498000000"
+        },
+        {
+          "imageUrl": "https://thefoschini.vtexassets.com/arquivos/ids/157665759/50ac2407-5382-49e7-ba77-7d01ca0edbf0.jpg?v=638579430504470000"
+        },
+        {
+          "imageUrl": "https://thefoschini.vtexassets.com/arquivos/ids/157665764/285faae2-1f46-4eca-913d-29610b25e422.jpg?v=638579430508070000"
+        }
+      ]
+    }
+  ],
+  "categoryTree": [
+    {
+      "href": "/kids"
+    },
+    {
+      "href": "/kids/boys"
+    },
+    {
+      "href": "/kids/boys/shoes"
+    },
+    {
+      "href": "/kids/boys/shoes/sneakers"
+    }
+  ]
+}

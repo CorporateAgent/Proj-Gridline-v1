@@ -1,0 +1,48 @@
+{
+  "productName": "Mens Nike Springboks RWC 23 Winner White Tee",
+  "brand": "Nike",
+  "priceRange": {
+    "sellingPrice": {
+      "lowPrice": 349.95
+    }
+  },
+  "description": "Elevate your Springboks fan status with the limited edition Springboks World Champions tee, from Nike. \nCrafted with utmost care and attention to detail, this t-shirt is a tribute to the legendary 2023 South African rugby World Cup Winners. This iconic white tee is a must have for any SA rugby supporter. Join the nation in celebrating rugby greatness by embracing the Springboks spirit with this limited edition iconic t-shirt.",
+  "items": [
+    {
+      "images": [
+        {
+          "imageUrl": "https://thefoschini.vtexassets.com/arquivos/ids/150866679/60411525.jpg?v=638485365448200000"
+        },
+        {
+          "imageUrl": "https://thefoschini.vtexassets.com/arquivos/ids/150866666/60411525_03.jpg?v=638485365447570000"
+        },
+        {
+          "imageUrl": "https://thefoschini.vtexassets.com/arquivos/ids/150866667/d563c59d-d150-43a1-923d-bacce4e7564d.jpg?v=638485365447570000"
+        },
+        {
+          "imageUrl": "https://thefoschini.vtexassets.com/arquivos/ids/150866672/60411525_05.jpg?v=638485365448030000"
+        },
+        {
+          "imageUrl": "https://thefoschini.vtexassets.com/arquivos/ids/150866674/60411525_02.jpg?v=638485365448030000"
+        },
+        {
+          "imageUrl": "https://thefoschini.vtexassets.com/arquivos/ids/150866677/60411525_01.jpg?v=638485365448200000"
+        },
+        {
+          "imageUrl": "https://thefoschini.vtexassets.com/arquivos/ids/150866693/60411525_04.jpg?v=638485365449030000"
+        }
+      ]
+    }
+  ],
+  "categoryTree": [
+    {
+      "href": "/men"
+    },
+    {
+      "href": "/men/clothing"
+    },
+    {
+      "href": "/men/clothing/tops---t-shirts"
+    }
+  ]
+}

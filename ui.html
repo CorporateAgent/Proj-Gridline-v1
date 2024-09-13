@@ -344,7 +344,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
         updateStatusText('LOADING DATA');
         try {
-            const response = await fetch('http://localhost:3000/search', {
+            const response = await fetch('https://wyfh6s-3000.csb.app/search', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -381,7 +381,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
         const fileName = `product_${currentIndex + 1}.json`;
         try {
-            const response = await fetch(`http://localhost:3000/temp/${fileName}`);
+            const response = await fetch(`https://wyfh6s-3000.csb.app/temp/${fileName}`);
             if (!response.ok) {
                 throw new Error(`HTTP error! status: ${response.status}`);
             }

@@ -1,0 +1,48 @@
+{
+  "productName": "Mens Nike Springboks Pullover Green Hoodie",
+  "brand": "Nike",
+  "priceRange": {
+    "sellingPrice": {
+      "lowPrice": 1399.95
+    }
+  },
+  "description": "The Nike Springboks Pullover Green Hoodie is a must-have for any fan. Made with synthetic fabric, this hoodie features a hood and long sleeves for extra warmth. It's perfect for showing off your support for the Springboks. Stand out in style with this comfortable and stylish hoodie.",
+  "items": [
+    {
+      "images": [
+        {
+          "imageUrl": "https://thefoschini.vtexassets.com/arquivos/ids/155082115/71405259-4bea-4e8e-ac35-a5b56517c864.jpg?v=638548319149130000"
+        },
+        {
+          "imageUrl": "https://thefoschini.vtexassets.com/arquivos/ids/155082120/de911229-e6ca-4e7d-b9f5-7098e51f425b.jpg?v=638548319156330000"
+        },
+        {
+          "imageUrl": "https://thefoschini.vtexassets.com/arquivos/ids/155082129/8a96385c-e612-4717-9506-7f990ba95a63.jpg?v=638548319162830000"
+        },
+        {
+          "imageUrl": "https://thefoschini.vtexassets.com/arquivos/ids/155082137/2da2959b-fb57-40f6-9a8b-3aaaf349c9bc.jpg?v=638548319170330000"
+        },
+        {
+          "imageUrl": "https://thefoschini.vtexassets.com/arquivos/ids/155082147/a579c0f2-9f91-42d8-8f49-bf9c7ea05bdb.jpg?v=638548319181400000"
+        },
+        {
+          "imageUrl": "https://thefoschini.vtexassets.com/arquivos/ids/155082157/54f01967-8088-4d5d-9c75-84314495bd94.jpg?v=638548319190600000"
+        },
+        {
+          "imageUrl": "https://thefoschini.vtexassets.com/arquivos/ids/155082163/c9bf5747-7244-44c9-ba02-8d3e100ddc64.jpg?v=638548319195300000"
+        }
+      ]
+    }
+  ],
+  "categoryTree": [
+    {
+      "href": "/men"
+    },
+    {
+      "href": "/men/clothing"
+    },
+    {
+      "href": "/men/clothing/tops---t-shirts"
+    }
+  ]
+}

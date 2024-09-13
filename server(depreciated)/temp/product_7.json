@@ -1,0 +1,45 @@
+{
+  "productName": "Women's Nike Court Vision Alta White Sneaker",
+  "brand": "Nike",
+  "priceRange": {
+    "sellingPrice": {
+      "lowPrice": 1699.95
+    }
+  },
+  "description": "Street fashion meets b-ball authenticity in the Nike Court Vision Alta. The distinctly modern design combines textured leather on top and a platform on the bottom—providing comfort and style inspired by women.",
+  "items": [
+    {
+      "images": [
+        {
+          "imageUrl": "https://thefoschini.vtexassets.com/arquivos/ids/157710547/57718032.jpg?v=638579469657270000"
+        },
+        {
+          "imageUrl": "https://thefoschini.vtexassets.com/arquivos/ids/157710551/57718032_01.jpg?v=638579469661230000"
+        },
+        {
+          "imageUrl": "https://thefoschini.vtexassets.com/arquivos/ids/157710557/57718032_02.jpg?v=638579469666230000"
+        },
+        {
+          "imageUrl": "https://thefoschini.vtexassets.com/arquivos/ids/157710562/57718032_03.jpg?v=638579469670870000"
+        },
+        {
+          "imageUrl": "https://thefoschini.vtexassets.com/arquivos/ids/157710568/57718032_04.jpg?v=638579469675400000"
+        },
+        {
+          "imageUrl": "https://thefoschini.vtexassets.com/arquivos/ids/157710572/57718032_SW.jpg?v=638579469679300000"
+        }
+      ]
+    }
+  ],
+  "categoryTree": [
+    {
+      "href": "/women"
+    },
+    {
+      "href": "/women/shoes"
+    },
+    {
+      "href": "/women/shoes/sneakers"
+    }
+  ]
+}

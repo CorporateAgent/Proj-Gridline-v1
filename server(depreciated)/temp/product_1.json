@@ -1,0 +1,48 @@
+{
+  "productName": "Mens Nike Springboks Stadium Home Jersey",
+  "brand": "Nike",
+  "priceRange": {
+    "sellingPrice": {
+      "lowPrice": 1399.95
+    }
+  },
+  "description": "The new Bok kit combines Nike’s innovation with South African pride through the subtle use of colour and design. Informed by the elite player’s need for comfort, durability, and support, it’s been engineered to deliver exactly what athletes want to experience during play.\n\nWorking closely with the Springboks, a kit was designed to reflect both the team’s history and South African culture.",
+  "items": [
+    {
+      "images": [
+        {
+          "imageUrl": "https://thefoschini.vtexassets.com/arquivos/ids/156982987/807ca03f-367e-4352-b17f-0f5fcfed86ec.jpg?v=638578692091830000"
+        },
+        {
+          "imageUrl": "https://thefoschini.vtexassets.com/arquivos/ids/156982992/d9b85cb0-2da3-4e5d-bddc-e533266698a7.jpg?v=638578692096830000"
+        },
+        {
+          "imageUrl": "https://thefoschini.vtexassets.com/arquivos/ids/156982997/3e56e134-03d6-483c-a8b9-0ae9a69e90ff.jpg?v=638578692101130000"
+        },
+        {
+          "imageUrl": "https://thefoschini.vtexassets.com/arquivos/ids/156983002/f46ba588-da79-4593-9136-1e08d6a645ba.jpg?v=638578692105670000"
+        },
+        {
+          "imageUrl": "https://thefoschini.vtexassets.com/arquivos/ids/156983009/9cbc6b3e-76d0-46a2-a515-5aee6d7689f9.jpg?v=638578692111000000"
+        },
+        {
+          "imageUrl": "https://thefoschini.vtexassets.com/arquivos/ids/156983012/3251d632-1543-4f26-a92d-bf0fd695d249.jpg?v=638578692115530000"
+        },
+        {
+          "imageUrl": "https://thefoschini.vtexassets.com/arquivos/ids/156983015/dfebd361-4879-43dd-af56-74ca24517ae2.jpg?v=638578692119600000"
+        }
+      ]
+    }
+  ],
+  "categoryTree": [
+    {
+      "href": "/men"
+    },
+    {
+      "href": "/men/clothing"
+    },
+    {
+      "href": "/men/clothing/tops---t-shirts"
+    }
+  ]
+}

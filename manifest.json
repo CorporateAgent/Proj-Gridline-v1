@@ -15,7 +15,8 @@
     "allowedDomains": [
       "https://thefoschini.myvtex.com/_v/segment/graphql/v1/",
       "https://thefoschini.vtexassets.com",
-      "http://localhost:3000"
+      "http://localhost:3000",
+      "https://wyfh6s-3000.csb.app/"
     ]
     
   }
