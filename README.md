@@ -1,22 +1,12 @@
-# Gridline System v0.2
+# Gridline System v1.2
 
-An attempt at streamlining the integration of product data into Figma designs, the plugin enables designers to generate design instances using predefined components from the team library. It automatically populates these instances with Bash product data. By cloning existing design components, the plugin simplifies the application of product details in design prototypes, ensuring designers have access to the most up-to-date and relevant product information in their designs. <br><br>![AltText](/images/preview_small.gif) <br>
+An attempt at streamlining the integration of product data into Figma designs, 
+by automatically populating instances with Bash product data by cloning existing design components.
+The plugin simplifies the application of product details in figma design workflows,ensuring designers have access to the most up-to-date and relevant product information in their work. <br><br>![AltText](/images/preview_small.gif) <br>
 
 
-## Key Features
 
-<table>
-  <tr>
-    <td><strong>Component Cloning</strong></td>
-    <td> This feature enables designers to quickly generate multiple instances of a component with the included product information.</td>
-  </tr>
-  <tr>
-    <td><strong>Data Integration</strong></td>
-    <td>Integrates real-time product data to the cloned instances, ensuring that all design elements are synchronized with the most current data.</td>
-  </tr>
-</table>
-
-## Schema 
+## Schema (aka HOW TO USE THIS THING)
 Templates must be prepared with the below naming conventions to ensure that the plugin can correctly identify and populate data into the Figma designs<br>
 <table>
   <tr>
@@ -105,39 +95,6 @@ Reference this directory in Figma via by navigating through <br>
   </tr>
 </table>
 
-## Schema For Designers 
-Templates must be prepared with the above naming conventions to ensure that the plugin can correctly identify and populate data into the Figma designs<br>
-<table>
-  <tr>
-    <td><span style="color:#8B8BF1;">Layer Naming</span></td>
-    <td>Layers should be named according to their content to ensure the plugin correctly applies data:
-      <ul>
-        <li><strong>productName:</strong> Layer for the product's name.</li>
-        <li><strong>price:</strong> Layer for displaying the product's price, including currency.</li>
-        <li><strong>brand:</strong> Layer for the brand name.</li>
-        <li><strong>description:</strong> Layer for a brief description of the product.</li>
-        <li><strong>category1, category2, category3:</strong> Layers for product categories.</li>
-      </ul>
-    </td>
-  </tr>
-  <tr>
-    <td><span style="color:#8B8BF1;">Image Layers</span></td>
-    <td>Image layers must be named systematically to correlate with image data:
-      <ul>
-        <li><strong>imageURL1, imageURL2, imageURL3:</strong> Naming pattern for image layers where images will be dynamically inserted.</li>
-      </ul>
-    </td>
-  </tr>
-  <tr>
-    <td><span style="color:#8B8BF1;">Color Customization</span></td>
-    <td>Layers intended for dynamic coloring should follow a naming convention that includes a prefix:
-      <ul>
-        <li><strong>randomize1, randomize2, randomize3:</strong> Layers that will receive random colors from the specified palette.</li>
-      </ul>
-    </td>
-  </tr>
-  <tr>
-</table>
 <br>
 ## Frontend (Figma Plugin UI)
 The user interface is built using HTML, CSS, and Typescript(JavaScript.) It enables users to interact with the plugin, enter SKUs, view product images, and trigger the generation of design instances. The <span style="color:#8B8BF1;">ui.html </span> file serves as the user interface for the Gridline plugin. It is divided into several sections, each serving a specific purpose: <br><br>
